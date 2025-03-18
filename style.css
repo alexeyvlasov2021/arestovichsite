@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+}
+
+div#ham{
+    display: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: transparent;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #faf1e69a;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+nav a#left {
+    color: green;
+}
+
+nav a#right {
+    margin-right: 70px;
+}
+
+div.main_foto {
+    position: fixed;
+    width: 100vw;
+    height: 60vh;
+    background-size: cover;
+    background-image: url('./images/foto_main.png');
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.logo {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main_foto p {
+    font-size: 2rem;
+    color: hsla(0, 3%, 66%, 0.807);
+}
+
+#svg_icon {
+    opacity: 0.4;
+    width: 350px;
+}
+
+div.message {
+    margin-top: 70vh;
+    background-color: white;
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1.4rem;
+    font-family: sans-serif
+}
+
+div.message {
+    color: #76ABAE;
+}
+
+div.message #text {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+
+div.message #description {
+    font-size: 1.4rem;
+    width: 450px;
+    text-align: center;
+}
+
+div.message a#read_more {
+    color: #76ABAE;
+    text-decoration: none;
+}
+
+div.message a#read_more:hover {
+    text-decoration: underline;
+}
+
+/* img#frontline {
+    margin-top: 100px;
+    width: 100vw;
+    opacity: 0;
+    transform: scale(1.7)
+} */
+
+div#frontline {
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-image: url('./images/frontline.png');
+    opacity: 0;
+    transform: scale(1.7);
+    /* top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+div.socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+footer{
+    background-color: black;
+    color: white;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    color: #76ABAE;
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer p{
+    opacity: 0;
+    transform: translateY(200px);
+}
+
+@media (max-width: 1250px) {
+    /* … */
+
+    div#ham{
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 900;
+    }
+
+    nav{
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        height: 30vh;
+        margin-top: 65px;
+        margin-left: 35px;
+    }
+
+    div.main_foto{
+        height: 42vh;
+    }
+    div.logo{
+        display: none;
+    }
+
+    div.message{
+        margin-top: 45vh;
+        height: 25vh;
+    }
+
+    div.message #text{
+        font-size: 1.5rem;
+    }
+
+    div.message #description {
+        font-size: 1.2rem;
+        width: 425px;
+    }
+    div.message a#read_more{
+        font-size: 1.0rem;
+    }
+    div#frontline{
+        opacity: 1;
+        transform: scale(1);
+        height: 30vh;
+    }
+
+    div.socials {
+        display: none;
+    }
+
+    footer{
+        height: 30vh;
+    }
+    footer p{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+  }
